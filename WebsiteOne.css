@@ -98,3 +98,13 @@ a{
   width: 100px;
   height: 100px;
 }
+
+img {
+  width: 350px;
+  height: 350px;
+}
+
+button{
+  width: 350px;
+  height: 70px;
+}
