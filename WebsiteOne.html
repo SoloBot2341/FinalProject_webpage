@@ -1,26 +1,155 @@
 <!DOCTYPE html>
 <html>
+<head>
+<link rel="stylesheet" href="WebsiteOne.css">
+</head>
+<body>
 <h1>J's Clothing Shop</h1>
-    <head>
-        <link rel="stylesheet" href="WebsiteOne.css">
-    </head>
-      
-      <body>
-      
-        <ul>
-          <li><button><a href="WebstieOneTrending.html">Trending</a></button></li>  
-          <li><button><a href="WebsiteOneDeals.html">Deals</a></button></li>   
-          <li><button><a href="WebsiteOneRewards.html">Rewards</a></button></li>
-          <li><button><a href="WebsiteOneSubcription.html">Subscription</a></button></li>
-          <li><button><a href="WebsiteOneSell.html">Sell</a></button></li>
-        </ul><br>
-      
-        <!-- Rest of page content -->
-        <form>
-            <input type="text" placeholder="Explore...">
-            <button type="submit">Search</button>
-        </form>
+<ul>
+    <li><button><a href="WebstieOneTrending.html">Trending</a></button></li>  
+    <li><button><a href="WebsiteOneDeals.html">Deals</a></button></li>   
+    <li><button><a href="WebsiteOneRewards.html">Rewards</a></button></li>
+    <li><button><a href="WebsiteOneSubcription.html">Subscription</a></button></li>
+    <li><button><a href="WebsiteOneSell.html">Sell</a></button></li>
+</ul><br>
 
-        <footer><center>J's Shop</footer></center>
-      </body>
+<form action="{% url 'search' %}" method="get">
+    <input type="text" name="query" placeholder="Explore...">
+    <button type="submit">Search</button>
+</form>
+
+
+<!-- Shirts here -->
+<h1>J's Shirts &#128293;</h1>
+<div class="image-container-clothes">
+    <div class="image-wrapper">
+        <img src="ProductDesigns/shirts/ShirtProduct1.jpg" alt="Shirt 1">
+        <p>Shirt 1</p><br>
+        <p>price: $5.00</p>
+    </div>
+    <div class="image-wrapper">
+        <img src="ProductDesigns/shirts/ShirtProduct2.jpg" alt="Shirt 2">
+        <p>Shirt 2</p>
+        <p>price: $5.99</p>
+    </div>
+    <div class="image-wrapper">
+        <img src="ProductDesigns/shirts/ShirtProduct3.jpg" alt="Shirt 3">
+        <p>Shirt 3</p>
+        <p>price: $4.50</p>
+    </div>
+    <div class="image-wrapper">
+        <img src="ProductDesigns/shirts/ShirtProduct4.jpg" alt="Shirt 4">
+        <p>Shirt 4</p>
+        <p>price: $5.00</p>
+    </div>    
+</div>
+   
+<!-- Pants here -->
+<h1>J's Jeans &#128293;</h1>
+<h2>MENS</h2>
+<div class="image-container-clothes">
+    <div class="image-wrapper">
+        <img src="ProductDesigns/pants/pants1.jpg" alt="Pants 1">
+        <p>Pants 1</p><br>
+        <p>price: $8.00</p>
+    </div>
+    <div class="image-wrapper">
+        <img src="ProductDesigns/pants/pants2.jpg" alt="Pants 2">
+        <p>Pants 2</p>
+        <p>price: $6.99</p>
+    </div>
+    <div class="image-wrapper">
+        <img src="ProductDesigns/pants/pants3.jpg" alt="Pants 3">
+        <p>Pants 3</p>
+        <p>price: $10.50</p>
+    </div>
+    <div class="image-wrapper">
+        <img src="ProductDesigns/pants/pants4.jpg" alt="Pants 4">
+        <p>Pants 4</p>
+        <p>price: $6.75</p>
+    </div>    
+</div>
+
+
+<!-- Hoodies here-->
+<h1>J's Hoodies &#128293;</h1>
+<h2>HOODIES</h2>
+<div class="image-container-clothes">
+    <div class="image-wrapper">
+        <img src="ProductDesigns/hoodies/hoodie1.jpg" alt="Pants 1">
+        <p>Pants 1</p><br>
+        <p>price: $7.99</p>
+    </div>
+    <div class="image-wrapper">
+        <img src="ProductDesigns/hoodies/hoodie2.jpg" alt="Pants 2">
+        <p>Pants 2</p>
+        <p>price: $6.99</p>
+    </div>
+    <div class="image-wrapper">
+        <img src="ProductDesigns/hoodies/hoodie3.jpg" alt="Pants 3">
+        <p>Pants 3</p>
+        <p>price: $10.50</p>
+    </div>
+    <div class="image-wrapper">
+        <img src="ProductDesigns/hoodies/hoodie4.jpg" alt="Pants 4">
+        <p>Pants 4</p>
+        <p>price: $6.75</p>
+    </div>    
+</div>
+
+<!--Tees here-->
+<h1>J's Tees &#128293;</h1>
+<h2>T shirts</h2>
+<div class="image-container-clothes">
+    <div class="image-wrapper">
+        <img src="ProductDesigns/graphic_Ts/GraphicTee1.jpg" alt="T-shirt 1">
+        <p>T-shirt 1</p><br>
+        <p>price: $3.50</p>
+    </div>
+    <div class="image-wrapper">
+        <img src="ProductDesigns/graphic_Ts/GraphicTee2.jpg" alt="T-shirt 2">
+        <p>T-shirt 2</p>
+        <p>price: $3.75</p>
+    </div>
+    <div class="image-wrapper">
+        <img src="ProductDesigns/graphic_Ts/GraphicTee3.jpg" alt="T-shirt 3">
+        <p>T-shirt 3</p>
+        <p>price: $20.50</p>
+    </div>
+    <div class="image-wrapper">
+        <img src="ProductDesigns/graphic_Ts/GraphicTee4.jpg" alt="T-shirt 4">
+        <p>T-shirt 4</p>
+        <p>price: $2.75</p>
+    </div>    
+</div>
+
+<!--shorts here-->
+<h1>J's Shorts &#128293;</h1>
+<h2>Shorts</h2>
+<div class="image-container-clothes">
+    <div class="image-wrapper">
+        <img src="ProductDesigns/Shorts/shorts1.jpg" alt="Short 1">
+        <p>Short 1</p><br>
+        <p>price: $7.00</p>
+    </div>
+    <div class="image-wrapper">
+        <img src="ProductDesigns/Shorts/shorts2.jpg" alt="Short 2">
+        <p>Short 2</p>
+        <p>price: $5.75</p>
+    </div>
+    <div class="image-wrapper">
+        <img src="ProductDesigns/Shorts/shorts3.avif" alt="Short 3">
+        <p>Short 3</p>
+        <p>price: $9.50</p>
+    </div>
+    <div class="image-wrapper">
+        <img src="ProductDesigns/Shorts/shorts4.jpg" alt="Short 4">
+        <p>Short 4</p>
+        <p>price: $6.25</p>
+    </div>    
+</div>
+
+
+<footer style="text-align:center;">J's Shop</footer>
+</body>
 </html>
